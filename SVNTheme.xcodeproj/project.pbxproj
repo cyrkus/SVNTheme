@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A11799911E96E3A200DC7D70 /* SVNTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = A117998F1E96E3A200DC7D70 /* SVNTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A11799981E96E3FB00DC7D70 /* SVNTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11799971E96E3FB00DC7D70 /* SVNTheme.swift */; };
+		A117999C1E96F6EB00DC7D70 /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117999B1E96F6EB00DC7D70 /* DefaultTheme.swift */; };
+		A163A4BB1E96F9A6003C0D9A /* HEXColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A163A4BA1E96F9A6003C0D9A /* HEXColor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +18,8 @@
 		A117998F1E96E3A200DC7D70 /* SVNTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVNTheme.h; sourceTree = "<group>"; };
 		A11799901E96E3A200DC7D70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A11799971E96E3FB00DC7D70 /* SVNTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVNTheme.swift; sourceTree = "<group>"; };
+		A117999B1E96F6EB00DC7D70 /* DefaultTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTheme.swift; sourceTree = "<group>"; };
+		A163A4BA1E96F9A6003C0D9A /* HEXColor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HEXColor.framework; path = Carthage/Build/iOS/HEXColor.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A163A4BB1E96F9A6003C0D9A /* HEXColor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +39,7 @@
 			children = (
 				A117998E1E96E3A200DC7D70 /* SVNTheme */,
 				A117998D1E96E3A200DC7D70 /* Products */,
+				A163A4B91E96F9A6003C0D9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,10 +55,19 @@
 			isa = PBXGroup;
 			children = (
 				A11799971E96E3FB00DC7D70 /* SVNTheme.swift */,
+				A117999B1E96F6EB00DC7D70 /* DefaultTheme.swift */,
 				A117998F1E96E3A200DC7D70 /* SVNTheme.h */,
 				A11799901E96E3A200DC7D70 /* Info.plist */,
 			);
 			path = SVNTheme;
+			sourceTree = "<group>";
+		};
+		A163A4B91E96F9A6003C0D9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A163A4BA1E96F9A6003C0D9A /* HEXColor.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +92,7 @@
 				A11799881E96E3A100DC7D70 /* Frameworks */,
 				A11799891E96E3A100DC7D70 /* Headers */,
 				A117998A1E96E3A100DC7D70 /* Resources */,
+				A163A4BC1E96F9AC003C0D9A /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -131,12 +147,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A163A4BC1E96F9AC003C0D9A /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT/Carthage/Build/iOS/HexColor.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A11799871E96E3A100DC7D70 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A11799981E96E3FB00DC7D70 /* SVNTheme.swift in Sources */,
+				A117999C1E96F6EB00DC7D70 /* DefaultTheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +289,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SVNTheme/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -276,6 +315,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SVNTheme/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
