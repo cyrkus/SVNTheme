@@ -10,6 +10,7 @@
 		A11799911E96E3A200DC7D70 /* SVNTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = A117998F1E96E3A200DC7D70 /* SVNTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A11799981E96E3FB00DC7D70 /* SVNTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11799971E96E3FB00DC7D70 /* SVNTheme.swift */; };
 		A117999C1E96F6EB00DC7D70 /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117999B1E96F6EB00DC7D70 /* DefaultTheme.swift */; };
+		A163A4BE1E96FC96003C0D9A /* UIColor-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A163A4BD1E96FC96003C0D9A /* UIColor-Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		A11799971E96E3FB00DC7D70 /* SVNTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVNTheme.swift; sourceTree = "<group>"; };
 		A117999B1E96F6EB00DC7D70 /* DefaultTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTheme.swift; sourceTree = "<group>"; };
 		A163A4BA1E96F9A6003C0D9A /* HEXColor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HEXColor.framework; path = Carthage/Build/iOS/HEXColor.framework; sourceTree = "<group>"; };
+		A163A4BD1E96FC96003C0D9A /* UIColor-Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				A11799971E96E3FB00DC7D70 /* SVNTheme.swift */,
 				A117999B1E96F6EB00DC7D70 /* DefaultTheme.swift */,
+				A163A4BD1E96FC96003C0D9A /* UIColor-Ext.swift */,
 				A117998F1E96E3A200DC7D70 /* SVNTheme.h */,
 				A11799901E96E3A200DC7D70 /* Info.plist */,
 			);
@@ -151,6 +154,7 @@
 			files = (
 				A11799981E96E3FB00DC7D70 /* SVNTheme.swift in Sources */,
 				A117999C1E96F6EB00DC7D70 /* DefaultTheme.swift in Sources */,
+				A163A4BE1E96FC96003C0D9A /* UIColor-Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,10 +272,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SVNTheme/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -294,10 +295,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SVNTheme/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
