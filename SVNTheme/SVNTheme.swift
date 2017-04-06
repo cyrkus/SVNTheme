@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- A protocol to alert global SVNApps thematic colors
+ A protocol to create global SVNApps thematic colors
  Naming convention based off of Google Material design ideology 
  https://material.io/guidelines/style/color.html#color-themes
  - variables :
