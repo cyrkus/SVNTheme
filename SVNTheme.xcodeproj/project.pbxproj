@@ -10,7 +10,6 @@
 		A11799911E96E3A200DC7D70 /* SVNTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = A117998F1E96E3A200DC7D70 /* SVNTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A11799981E96E3FB00DC7D70 /* SVNTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11799971E96E3FB00DC7D70 /* SVNTheme.swift */; };
 		A117999C1E96F6EB00DC7D70 /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117999B1E96F6EB00DC7D70 /* DefaultTheme.swift */; };
-		A163A4BB1E96F9A6003C0D9A /* HEXColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A163A4BA1E96F9A6003C0D9A /* HEXColor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A163A4BB1E96F9A6003C0D9A /* HEXColor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +90,6 @@
 				A11799881E96E3A100DC7D70 /* Frameworks */,
 				A11799891E96E3A100DC7D70 /* Headers */,
 				A117998A1E96E3A100DC7D70 /* Resources */,
-				A163A4BC1E96F9AC003C0D9A /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -146,24 +143,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A163A4BC1E96F9AC003C0D9A /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT/Carthage/Build/iOS/HexColor.framework",
-			);
-			name = Carthage;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A11799871E96E3A100DC7D70 /* Sources */ = {
