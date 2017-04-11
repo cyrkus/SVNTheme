@@ -37,6 +37,6 @@ public struct SVNTheme_DefaultDark: SVNTheme {
         self.mediumHeading = UIFont(name: standardFontName, size: 20)!
         self.smallHeading = UIFont(name: standardFontName, size: 10)!
         self.body = UIFont(name: standardFontName, size: 16)!
-        self.textField = UIFont(name: "LibreBaskerville-Regular", size: 12)!
+        self.textField = UIFont(name: "HelveticaNeue-Thin", size: 12)!
     }
 }
