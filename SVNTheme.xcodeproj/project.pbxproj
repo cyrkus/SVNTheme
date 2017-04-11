@@ -10,6 +10,8 @@
 		A11799911E96E3A200DC7D70 /* SVNTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = A117998F1E96E3A200DC7D70 /* SVNTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A11799981E96E3FB00DC7D70 /* SVNTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11799971E96E3FB00DC7D70 /* SVNTheme.swift */; };
 		A117999C1E96F6EB00DC7D70 /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A117999B1E96F6EB00DC7D70 /* DefaultTheme.swift */; };
+		A15B0D9F1E9C5291004C4356 /* Palatino.ttc in Resources */ = {isa = PBXBuildFile; fileRef = A15B0D9E1E9C5291004C4356 /* Palatino.ttc */; };
+		A15B0DA21E9C5598004C4356 /* LibreBaskerville-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A15B0DA11E9C5598004C4356 /* LibreBaskerville-Regular.ttf */; };
 		A163A4BE1E96FC96003C0D9A /* UIColor-Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A163A4BD1E96FC96003C0D9A /* UIColor-Ext.swift */; };
 /* End PBXBuildFile section */
 
@@ -19,6 +21,8 @@
 		A11799901E96E3A200DC7D70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A11799971E96E3FB00DC7D70 /* SVNTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVNTheme.swift; sourceTree = "<group>"; };
 		A117999B1E96F6EB00DC7D70 /* DefaultTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTheme.swift; sourceTree = "<group>"; };
+		A15B0D9E1E9C5291004C4356 /* Palatino.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Palatino.ttc; sourceTree = "<group>"; };
+		A15B0DA11E9C5598004C4356 /* LibreBaskerville-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LibreBaskerville-Regular.ttf"; sourceTree = "<group>"; };
 		A163A4BA1E96F9A6003C0D9A /* HEXColor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HEXColor.framework; path = Carthage/Build/iOS/HEXColor.framework; sourceTree = "<group>"; };
 		A163A4BD1E96FC96003C0D9A /* UIColor-Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,9 +62,19 @@
 				A117999B1E96F6EB00DC7D70 /* DefaultTheme.swift */,
 				A163A4BD1E96FC96003C0D9A /* UIColor-Ext.swift */,
 				A117998F1E96E3A200DC7D70 /* SVNTheme.h */,
+				A15B0DA01E9C5293004C4356 /* Fonts */,
 				A11799901E96E3A200DC7D70 /* Info.plist */,
 			);
 			path = SVNTheme;
+			sourceTree = "<group>";
+		};
+		A15B0DA01E9C5293004C4356 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A15B0DA11E9C5598004C4356 /* LibreBaskerville-Regular.ttf */,
+				A15B0D9E1E9C5291004C4356 /* Palatino.ttc */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		A163A4B91E96F9A6003C0D9A /* Frameworks */ = {
@@ -142,6 +156,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15B0D9F1E9C5291004C4356 /* Palatino.ttc in Resources */,
+				A15B0DA21E9C5598004C4356 /* LibreBaskerville-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,4 +31,9 @@ public protocol SVNTheme {
     var stanardButtonTintColor: UIColor { get set }
     var acceptButtonTintColor: UIColor { get set }
     var declineButtonTintColor: UIColor { get set }
+    var largeHeading: UIFont { get set }
+    var mediumHeading: UIFont { get set }
+    var smallHeading: UIFont { get set }
+    var body: UIFont { get set }
+    var textField: UIFont { get set }
 }

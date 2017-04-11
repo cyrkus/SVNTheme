@@ -17,6 +17,11 @@ public struct SVNTheme_DefaultDark: SVNTheme {
     public var acceptButtonTintColor: UIColor
     public var declineButtonTintColor: UIColor
     public var stanardButtonTintColor: UIColor
+    public var largeHeading: UIFont
+    public var mediumHeading: UIFont
+    public var smallHeading: UIFont
+    public var body: UIFont
+    public var textField: UIFont
     
     public init() {
         self.navigationBarColor = UIColor(r: 50, g: 41, b: 41)
@@ -27,5 +32,11 @@ public struct SVNTheme_DefaultDark: SVNTheme {
         self.acceptButtonTintColor = UIColor(r: 0, g: 198, b: 82)
         self.declineButtonTintColor = UIColor(r: 214, g: 0, b: 0)
         self.stanardButtonTintColor = UIColor(r: 255, g: 255, b: 255)
+        let standardFontName = "Palatino"
+        self.largeHeading = UIFont(name: standardFontName, size: 26)!
+        self.mediumHeading = UIFont(name: standardFontName, size: 20)!
+        self.smallHeading = UIFont(name: standardFontName, size: 10)!
+        self.body = UIFont(name: standardFontName, size: 16)!
+        self.textField = UIFont(name: "LibreBaskerville-Regular", size: 12)!
     }
 }
