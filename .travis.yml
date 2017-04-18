@@ -1,27 +1,19 @@
 language: objective-c
 osx_image: xcode7.3
 xcode_project: SVNTheme.xcodeproj
+# xcode_workspace: <WORKSPACE_PLACEHOLDER>
 xcode_scheme: SVNTheme
 xcode_sdk: iphonesimulator9.3
 env:
   global:
-  - FRAMEWORK_NAME=<SVNTheme
-  - GITHUB_ACCESS_TOKEN=
+    - FRAMEWORK_NAME=SVNTheme
 before_install:
-- brew update
-- brew outdated carthage || brew upgrade carthage
+  - brew update
+  - brew outdated carthage || brew upgrade carthage
 before_script:
-- carthage bootstrap
+  # bootstrap the dependencies for the project
+  # you can remove if you don't have dependencies
+  - carthage bootstrap
 before_deploy:
-- carthage build --no-skip-current
-- carthage archive $FRAMEWORK_NAME
-deploy:
-  provider: releases
-  api_key:
-    secure: fV2tZrpK/qmAX5TnduJpTkbEO1EAY5Cog/+k26/7z+svtufmaVFe3FSlfDR/CtPCI2YecE3D+50QlqU8EeJQcZfZ/W9nhg/uqi+zHw9mUAlMaewUAM8h/U24RY6IauRrZ4y4Yx5m1BikHomC4ROYiw/lNBMA54YdUNZdnHWX/QWQH30CiYYX4eBw6p6qCapuVoaTdGQ5ouLLRTZNJiA2IY6GUMcq7jbdklIhgsBfV0fLgx32hhkPyH0/DRv3DCYu222BF1T/2+uzNsqEmHH/u1Ip36quDvdNy0JppVGHdVTrhGoAJ1RMFz2496WOKgNQtUHYY9BwhtHhC0pKE8tynQiIWtFGDBAKB6bYAB/zZZJkAmLS9e/RNz366LQFIrbls3ap+3MrB2WjYWm3oT6iegL/h+69bMnNe+4OdJxecc5oJ02T8/PZQCYCwwxkJoF/Ls5KHVdLllzgK3i05elS3jE0Ie2tMc/N4mJCnZKtKKh0WL5z7gKDlPAJyOTkhkSqdQRYOr8jSS8ah0nCztFkxRZiqLha/She7qz4whbH0K4irGwzL92sYWbfsfgCauDaRq7iIMRHXOApqcOtQZeBFFuE6JgbcSNh3TUdUJIarDO45KskRD89fwwTl+9x1JfnaueSNBbVkN7WHwQ5UACyJ1ksbwuXjcCWF4uiVQ7VemI=
-  file: SVNTheme.framework.zip
-  on:
-    repo: sevenapps/SVNTheme
-true:
-  repo: repo/repo
-  tags: true
+  - carthage build --no-skip-current
+  - carthage archive $FRAMEWORK_NAME
