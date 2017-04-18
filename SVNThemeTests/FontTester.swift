@@ -16,7 +16,7 @@ class FontTester: XCTestCase {
     override func setUp() {
         super.setUp()
         theme = SVNTheme_DefaultDark()
-        let foo = theme.textField
+        let foo = theme.textFieldw
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
