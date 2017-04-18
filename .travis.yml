@@ -5,8 +5,7 @@ xcode_scheme: SVNTheme
 xcode_sdk: iphonesimulator9.3
 env:
   global:
-  - FRAMEWORK_NAME=<SVNTheme
-  - GITHUB_ACCESS_TOKEN=
+  - FRAMEWORK_NAME=SVNTheme
 before_install:
 - brew update
 - brew outdated carthage || brew upgrade carthage
@@ -18,10 +17,8 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
-    secure: fV2tZrpK/qmAX5TnduJpTkbEO1EAY5Cog/+k26/7z+svtufmaVFe3FSlfDR/CtPCI2YecE3D+50QlqU8EeJQcZfZ/W9nhg/uqi+zHw9mUAlMaewUAM8h/U24RY6IauRrZ4y4Yx5m1BikHomC4ROYiw/lNBMA54YdUNZdnHWX/QWQH30CiYYX4eBw6p6qCapuVoaTdGQ5ouLLRTZNJiA2IY6GUMcq7jbdklIhgsBfV0fLgx32hhkPyH0/DRv3DCYu222BF1T/2+uzNsqEmHH/u1Ip36quDvdNy0JppVGHdVTrhGoAJ1RMFz2496WOKgNQtUHYY9BwhtHhC0pKE8tynQiIWtFGDBAKB6bYAB/zZZJkAmLS9e/RNz366LQFIrbls3ap+3MrB2WjYWm3oT6iegL/h+69bMnNe+4OdJxecc5oJ02T8/PZQCYCwwxkJoF/Ls5KHVdLllzgK3i05elS3jE0Ie2tMc/N4mJCnZKtKKh0WL5z7gKDlPAJyOTkhkSqdQRYOr8jSS8ah0nCztFkxRZiqLha/She7qz4whbH0K4irGwzL92sYWbfsfgCauDaRq7iIMRHXOApqcOtQZeBFFuE6JgbcSNh3TUdUJIarDO45KskRD89fwwTl+9x1JfnaueSNBbVkN7WHwQ5UACyJ1ksbwuXjcCWF4uiVQ7VemI=
+    secure: CEY585bR0BiwVR/yl7odwnBWlszpYLNY+HKPuHAyT6ftXMD1g2lFbfRZXeF7FfI5wm8KslCb0uWZxZsT8xgzqgPcWgOOyQhNa7gIaokQGcwpV9Z/6HAqs232iQxnv8uVHC+GRc3+YWbskSeVf+a6PVqpcyUFuF/pUoX8d7YWRDTvEU0ekuOA42fBzOofqN97o9RLKapVhsu/yY6aazEi+TWZpYnvggaqM+MmolD3hgYO5zJnQgLTh4Ku/wYw5qK+om5zCCGoLhFsUssDUTP/g0/PyJSCj3uSwkNjbyKYXdIsz/pAPUrDTeCsOT5Pm9r1vcCEOgsLo/s+f7LPFtC3/mDm3KPZC8FWaNewZ3iZtDTGQURhUyEbAKptdKKQ1y9mFdIJHdfbAjIYVLK2hZAkCvGfCt1EqzDvcnV2FtVFyj4KgsZqhohFRPBIHgbIvPSw8UU9ak2otYhNQjMXPSBcQFMjfjOZHEFOPzsNOnjC8ZHIbINTUskeus0JbtiIfdxNvckcQjZIkl9FKR7X+JFGXGYhGSrnMlrfz8VIA2uycJurEylp1NPI9fL7i50NvDo8rBkJ4fa2YrUl5pN1+4Iti95IGqVAE3+08M5IoA+rxJ8lTFleESlKWE6ixQaYQyOD63qCsuijnsyAQTo8LVPE/nHAEg4ZIS07Ch/QKYQh/68=
   file: SVNTheme.framework.zip
   on:
     repo: sevenapps/SVNTheme
-true:
-  repo: repo/repo
-  tags: true
+    branch: travis-setup
