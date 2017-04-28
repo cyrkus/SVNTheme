@@ -1,5 +1,9 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
+#SVNTheme
+    A Theme model that all UI elements of the SVNAppBuilderLibrary platform use to style their thematic elements.
+    Currently supported defaults: SVNThemeDefaultDark
+
 # To install this framework
 
 Add Carthage files to your .gitignore
