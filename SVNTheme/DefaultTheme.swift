@@ -33,10 +33,10 @@ public struct SVNTheme_DefaultDark: SVNTheme {
         self.declineButtonTintColor = UIColor(r: 214, g: 0, b: 0)
         self.stanardButtonTintColor = UIColor(r: 255, g: 255, b: 255)
         let standardFontName = "Palatino"
-        self.largeHeading = UIFont(name: standardFontName, size: 26)!
-        self.mediumHeading = UIFont(name: standardFontName, size: 20)!
-        self.smallHeading = UIFont(name: standardFontName, size: 10)!
-        self.body = UIFont(name: standardFontName, size: 16)!
-        self.textField = UIFont(name: "HelveticaNeue-Thin", size: 20)!
+        self.largeHeading = UIFont(name: standardFontName, size: 32)!
+        self.mediumHeading = UIFont(name: standardFontName, size: 26)!
+        self.smallHeading = UIFont(name: standardFontName, size: 20)!
+        self.body = UIFont(name: standardFontName, size: 20)!
+        self.textField = UIFont(name: "HelveticaNeue-Thin", size: 26)!
     }
 }
